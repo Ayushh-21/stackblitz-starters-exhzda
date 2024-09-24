@@ -37,7 +37,7 @@ app.get('/total-returns', (req, res) => {
 });
 
 const calculateReturnPercentage = (boughtAt, returns) => {
-  let result = ((boughtAt - returns) / boughtAt) * 100;
+  let result = (returns / boughtAt) * 100;
   return result;
 };
 
